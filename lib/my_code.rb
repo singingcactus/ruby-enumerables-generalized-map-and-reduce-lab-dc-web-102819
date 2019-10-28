@@ -17,5 +17,5 @@ def reduce(source_array,starting_value=true)
     new_result += result
     i += 1
   end
-  return result
+  return new_result
 end
