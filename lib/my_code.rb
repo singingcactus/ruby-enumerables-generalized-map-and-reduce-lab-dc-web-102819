@@ -10,5 +10,10 @@ def map(source_array)
 end
 
 def reduce(source_array,starting_value=0)
-  yield
+  store_value = starting_value
+  while i < source_array.length
+    store_value = yield(store_value, source_array[i])
+    i += 1
+  end
+  return store_value
 end
