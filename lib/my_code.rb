@@ -9,7 +9,7 @@ def map(source_array)
   return new_array
 end
 
-def reduce(source_array,starting_value*)
+def reduce(source_array,starting_value=true)
   i = 0
 #  while i < source_array.length
     result = yield(starting_value, source_array[i])
