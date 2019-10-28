@@ -21,8 +21,6 @@ def reduce(source_array,starting_value=nil)
 
   while i < source_array.length
     store_value = yield(store_value, source_array[i])
-      puts source_array[i]
-      puts [store_value, i]
     i += 1
   end
   return store_value
