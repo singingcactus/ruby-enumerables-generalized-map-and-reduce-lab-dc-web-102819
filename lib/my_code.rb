@@ -12,6 +12,7 @@ end
 def reduce(source_array,starting_value=nil)
   if starting_value
     store_value = starting_value
+  end
   i = 0
   while i < source_array.length
     store_value = yield(store_value, source_array[i])
