@@ -10,10 +10,15 @@ def map(source_array)
 end
 
 def reduce(source_array,starting_value=nil)
+  i = 0
+
   if starting_value
     store_value = starting_value
+  else
+    store_value = source_array[i]
+    i += 1
   end
-  i = 0
+
   while i < source_array.length
     store_value = yield(store_value, source_array[i])
       puts source_array[i]
